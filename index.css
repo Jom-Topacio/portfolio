@@ -1,0 +1,57 @@
+#vanta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+body{
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #FFFFFF;
+} 
+
+img {
+    border-radius: 50%;
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid white; /* Adds a clean border around the image */
+    
+}
+
+/* Universal button styling */
+#about-btn, #techstack-btn, #contacts-btn {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; /* Modern clean font */
+    padding: 12px 25px;
+    margin: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Subtle border */
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark */
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px); /* Slight glassmorphism effect */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effect: Glowing and Expanding */
+#about-btn:hover, #techstack-btn:hover, #contacts-btn:hover {
+    background: rgba(255, 255, 255, 0.1); /* Slight glow */
+    color: #fafafa; /* Futuristic yellow glow effect */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+/* Active (Click) Effect */
+#about-btn:active, #techstack-btn:active, #contacts-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 30px rgba(255, 204, 0, 1);
+}
