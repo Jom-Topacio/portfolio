@@ -6,6 +6,30 @@
     height: 100%;
     z-index: -1;
 }
+
+.navibar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.navibar a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navibar a:hover {
+    background: #555;
+}
+
 .contact-container {
     position: absolute;
     top: 50%;
