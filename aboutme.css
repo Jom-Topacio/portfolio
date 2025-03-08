@@ -7,7 +7,29 @@
     z-index: -1;
 }
 
-/* Page Styling */
+.navibar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.navibar a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navibar a:hover {
+    background: #555;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -20,26 +42,24 @@ body {
     color: white;
 }
 
-/* Updated About Me Section */
 .aboutmesq {
-    background: rgba(20, 20, 20, 0.85); /* Dark semi-transparent background */
+    background: rgba(20, 20, 20, 0.85); 
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.15); /* Softer glowing effect */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.15); 
     position: relative;
     z-index: 1;
-    color: white; /* Ensures text is readable */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for a sleek look */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
     width: 90%;
     max-width: 600px;
 }
 
-/* Profile Image */
 .aboutmesq img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid white; /* Adds a clean border around the image */
+    border: 3px solid white; 
 }
