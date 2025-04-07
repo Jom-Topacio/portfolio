@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         backgroundColor: 0x0,
         color1: 0xc03737,
         color2: 0xffffff,
-        speedLimit: 10.00,
+        speedLimit: 4.00,
         quantity: 4.00
       })
 });
