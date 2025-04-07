@@ -8,5 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
+        backgroundColor: 0x0,
+        color1: 0xc03737,
+        color2: 0xffffff,
+        speedLimit: 4.00,
+        quantity: 2.00
       })
 });
