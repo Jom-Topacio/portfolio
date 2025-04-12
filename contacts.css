@@ -15,15 +15,17 @@
     padding: 10px 15px;
     border-radius: 8px;
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 
 .navibar a {
     color: white;
     text-decoration: none;
     font-size: 23px;
-    padding: 8px 12px;
-    border-radius: 5px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
 }
 
 .navibar a:hover {
