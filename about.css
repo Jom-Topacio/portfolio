@@ -10,16 +10,14 @@
 
 .navibar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 8px;
     display: flex;
-    justify-content: flex-start;
-    gap: 30px;
-    background: transparent;
-    z-index: 10;
-}
+    gap: 30px; 
+}   
 
 .navibar a {
     color: white;
