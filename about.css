@@ -10,23 +10,32 @@
 
 .navibar {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px 15px;
-    border-radius: 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(4, 5, 65, 0.397);
+    padding: 15px 30px;
     display: flex;
-    gap: 30px; 
-}   
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navibar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    width: 100%; 
+    justify-content: flex-start;
+}
 
 .navibar a {
     color: white;
     text-decoration: none;
     font-size: 23px;
-    font-weight: 500;
-    padding: 8px 15px;
-    transition: all 0.3s ease;
-    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .navibar a:hover {
