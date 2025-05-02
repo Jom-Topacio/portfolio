@@ -17,6 +17,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: auto;
 }
 
 .navibar ul {
@@ -25,10 +26,9 @@
     margin: 0;
     display: flex;
     gap: 30px;
-    width: 100%; 
+    width: max-content;
     justify-content: flex-start;
 }
-
 .navibar a {
     color: white;
     text-decoration: none;
@@ -51,7 +51,6 @@ body {
     margin: 0;
     overflow: hidden;
 }
-
 
 .boxxs {
     background: rgba(20, 20, 20, 0.85); 
@@ -112,4 +111,114 @@ body {
     margin: 5px 0 0;
     font-size: 12px;
     font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1002;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navibar {
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 250px;
+        background: rgba(9, 10, 75, 0.95);
+        flex-direction: column;
+        padding: 60px 20px;
+        transition: 0.3s;
+        overflow-y: auto;
+    }
+
+    .navibar.active {
+        left: 0;
+    }
+
+    .navibar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .navibar ul {
+        gap: 15px;
+        padding: 0 10px;
+        min-width: max-content;
+    }
+
+    .navibar a {
+        font-size: 16px;
+        padding: 8px 12px;
+        white-space: nowrap;
+        display: block;
+        width: 100%; 
+        text-align: left; 
+        font-size: 18px;
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+
+    .boxxs {
+        margin-top: 60px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navibar {
+        padding: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navibar ul {
+        gap: 10px;
+    }
+
+    .navibar a {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tech-container {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .tech-item {
+        width: 70px;
+        height: 70px;
+    }
+
+    .tech-item img {
+        width: 35px;
+        height: 35px;
+    }
 }

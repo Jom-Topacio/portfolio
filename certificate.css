@@ -18,6 +18,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 1000;
 }
 
 .navibar ul {
@@ -28,8 +29,8 @@
     gap: 30px;
     width: 100%; 
     justify-content: flex-start;
-}
-
+    flex-wrap: nowrap;}
+    
 .navibar a {
     color: white;
     text-decoration: none;
@@ -54,6 +55,11 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    
+}
+
+#cert-title {
+    color : white;
 }
 
 .certificates-container {
@@ -61,10 +67,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background: rgba(20, 20, 20, 0.85); 
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .certificates-grid {
     display: grid;
@@ -93,4 +100,55 @@ body {
     display: block;
     margin: 0 auto;
     object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .navibar {
+        padding: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navibar ul {
+        gap: 15px;
+        padding: 0 10px;
+        min-width: max-content;
+    }
+
+    .navibar a {
+        font-size: 16px;
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navibar {
+        padding: 8px;
+    }
+
+    .navibar ul {
+        gap: 10px;
+    }
+
+    .navibar a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .certificates-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .certificate-item h3 {
+        font-size: 16px;
+    }
 }

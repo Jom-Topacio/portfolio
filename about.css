@@ -13,11 +13,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(4, 5, 65, 0.397);
+    background: rgba(9, 10, 75, 0.397);
     padding: 15px 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    z-index: 1000;
 }
 
 .navibar ul {
@@ -55,16 +56,14 @@ body {
 }
 
 .aboutmesq {
-    background: rgba(20, 20, 20, 0.85); 
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.15); 
+    margin-top: 80px;
     position: relative;
     z-index: 1;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.2); 
-    width: 90%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 800px;
+    background: rgba(20, 20, 20, 0.85);
+    padding: 25px;
+    border-radius: 15px;
 }
 
 .aboutmesq img {
@@ -74,4 +73,63 @@ body {
     object-fit: cover;
     margin-bottom: 15px;
     border: 3px solid white; 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navibar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 250px;
+        background: rgba(9, 10, 75, 0.95);
+        flex-direction: column;
+        padding: 60px 20px;
+        transition: 0.3s;
+    }
+
+    .navibar.active {
+        left: 0;
+    }
+
+    .navibar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .navibar a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .aboutmesq {
+        margin-top: 60px;
+        width: 90%;
+    }
 }
