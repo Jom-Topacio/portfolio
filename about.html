@@ -36,7 +36,9 @@
     </nav>
 
     <div id="vanta-bg"></div>
-    <div class="aboutmesq">
+
+      <div class="aboutmesq">
+
         <img src="facelogo.jpg" alt="My Picture">
         <p>
             Hi! My name is <b>John Emmanuel Topacio</b>,
@@ -53,20 +55,20 @@
     </div>
 
 
-   <script>
-        function toggleMenu() {
-            const nav = document.querySelector('.navibar');
-            nav.classList.toggle('active');
-        }
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const nav = document.querySelector('.navibar');
-            const hamburger = document.querySelector('.hamburger');
-            if (!nav.contains(event.target) && !hamburger.contains(event.target) && nav.classList.contains('active')) {
-                nav.classList.remove('active');
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('.navibar');
+                nav.classList.toggle('active');
             }
-        });
-    </script>
-</body>
+
+            // Closes menu when clicked outside
+            document.addEventListener('click', function(event) {
+                const nav = document.querySelector('.navibar');
+                const hamburger = document.querySelector('.hamburger');
+                if (!nav.contains(event.target) && !hamburger.contains(event.target) && nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+             }
+            });
+        </script>
+    </body>
 </html>

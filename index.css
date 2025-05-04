@@ -10,7 +10,7 @@
 
 body{
     text-align: center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Cals Sans", sans-serif;
     color: #FFFFFF;
 } 
 
@@ -82,7 +82,7 @@ img {
     font-size: 23px;
     padding: 10px 15px;
     border-radius: 5px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Cals sans", sans-serif;
 }
 
 .navibar a:hover {
@@ -109,7 +109,6 @@ img {
         padding: 10px 20px;
         margin: 10px;
     }
-
 
     .navibar {
         position: fixed;
