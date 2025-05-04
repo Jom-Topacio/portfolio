@@ -170,6 +170,11 @@ body {
         justify-content: center;
     }
 
+    .btn:hover {
+        background: black;
+        color: white;
+    }
+
     .brand-text {
         display: block;
     }
@@ -196,6 +201,11 @@ body {
     .btn {
         font-size: 16px;
         padding: 8px 16px;
+    }
+
+    .btn:hover {
+        background: black;
+        color: white;
     }
 
     .brand-text {
