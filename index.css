@@ -27,7 +27,6 @@ img {
 
 #about-btn, #techstack-btn, #contacts-btn, #certificate-btn {
     font-size: 20px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
     padding: 12px 25px;
     margin: 30px;
     border: 2px solid rgba(255, 255, 255, 0.6);
@@ -53,25 +52,6 @@ img {
 #about-btn:active, #techstack-btn:active, #contacts-btn:active, #certificate-btn:active {
     transform: scale(0.95);
     box-shadow: 0 0 30px rgba(255, 204, 0, 1);
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1001;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 2px 0;
-    transition: 0.4s;
 }
 
 .navibar {
@@ -130,9 +110,6 @@ img {
         margin: 10px;
     }
 
-    .hamburger {
-        display: flex;
-    }
 
     .navibar {
         position: fixed;

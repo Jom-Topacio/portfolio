@@ -46,8 +46,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Cal Sans', sans-serif;
     min-height: 80vh;
-    font-family: "Comic Sans MS", cursive, sans-serif;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -83,7 +83,7 @@ body {
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 1001;
+    z-index: 999;
 }
 
 .hamburger span {
@@ -93,6 +93,19 @@ body {
     margin: 2px 0;
     transition: 0.4s;
 }
+
+.brand-text {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: bold;
+    z-index: 999;
+}
+
 
 @media screen and (max-width: 768px) {
     .hamburger {
@@ -109,6 +122,7 @@ body {
         flex-direction: column;
         padding: 60px 20px;
         transition: 0.3s;
+        z-index: 1001;
     }
 
     .navibar.active {
@@ -119,7 +133,12 @@ body {
         flex-direction: column;
         width: 100%;
         gap: 20px;
-        padding: 0;
+    }
+
+    .navibar ul {
+        gap: 15px;
+        padding: 0 10px;
+        min-width: max-content;
     }
 
     .navibar a {
@@ -128,7 +147,11 @@ body {
         text-align: left;
         font-size: 23px;
         padding: 10px 15px;
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: "Cal Sans", sans-serif;
+    }
+
+    .brand-text {
+        display: block; 
     }
 }
 
@@ -144,5 +167,9 @@ body {
     .navibar a {
         font-size: 20px;
         padding: 8px 12px;
+    }
+
+    .brand-text {
+        display: block; 
     }
 }
