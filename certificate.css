@@ -102,23 +102,66 @@ body {
     object-fit: contain;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
 @media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
     .navibar {
-        padding: 10px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 250px;
+        background: rgba(9, 10, 75, 0.95);
+        flex-direction: column;
+        padding: 60px 20px;
+        transition: 0.3s;
+    }
+
+    .navibar.active {
+        left: 0;
     }
 
     .navibar ul {
-        gap: 15px;
-        padding: 0 10px;
-        min-width: max-content;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
     }
 
     .navibar a {
         font-size: 16px;
         padding: 8px 12px;
         white-space: nowrap;
+        display: block;
+        width: 100%; 
+        text-align: left; 
+        font-size: 23px;
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+
+    .certificates-wrapper {
+        margin-top: 60px;
     }
 }
 
@@ -132,8 +175,8 @@ body {
     }
 
     .navibar a {
-        font-size: 14px;
-        padding: 6px 10px;
+        font-size: 20px;
+        padding: 8px 12px;
     }
 }
 

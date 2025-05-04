@@ -119,17 +119,30 @@ body {
         flex-direction: column;
         width: 100%;
         gap: 20px;
+        padding: 0;
     }
 
     .navibar a {
         display: block;
         width: 100%;
         text-align: left;
-        font-size: 18px;
+        font-size: 23px;
+        padding: 10px 15px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navibar {
+        padding: 60px 15px;
     }
 
-    .aboutmesq {
-        margin-top: 60px;
-        width: 90%;
+    .navibar ul {
+        gap: 15px;
+    }
+
+    .navibar a {
+        font-size: 20px;
+        padding: 8px 12px;
     }
 }
