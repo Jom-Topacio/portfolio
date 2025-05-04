@@ -55,6 +55,59 @@ img {
     box-shadow: 0 0 30px rgba(255, 204, 0, 1);
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+.navibar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(9, 10, 75, 0.397);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1000;
+}
+
+.navibar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.navibar a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.navibar a:hover {
+    background: #555;
+}
 
 @media screen and (max-width: 768px) {
     img {
@@ -75,6 +128,41 @@ img {
         font-size: 16px;
         padding: 10px 20px;
         margin: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navibar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 250px;
+        background: rgba(9, 10, 75, 0.95);
+        flex-direction: column;
+        padding: 60px 20px;
+        transition: 0.3s;
+    }
+
+    .navibar.active {
+        left: 0;
+    }
+
+    .navibar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .navibar a {
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: 23px;
+        padding: 10px 15px;
     }
 }
 

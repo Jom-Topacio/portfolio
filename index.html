@@ -13,6 +13,13 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <div id="vanta-bg"></div>
 
         <img src="facelogo.jpg" alt="My pic" height="200">
@@ -39,5 +46,21 @@
 
 
         <p>Skrrttt!</p>
+
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('.navibar');
+                nav.classList.toggle('active');
+            }
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const nav = document.querySelector('.navibar');
+                const hamburger = document.querySelector('.hamburger');
+                if (!nav.contains(event.target) && !hamburger.contains(event.target) && nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                }
+            });
+        </script>
     </body>
 </html>
