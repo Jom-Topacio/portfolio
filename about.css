@@ -55,6 +55,10 @@ body {
     padding-top: 70px;
 }
 
+.headerAbout {
+    text-align: start;   
+}
+
 .aboutmesq {
     margin-top: 80px;
     position: relative;
