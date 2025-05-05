@@ -110,36 +110,6 @@ img {
         margin: 10px;
     }
 
-    .navibar {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        height: 100vh;
-        width: 250px;
-        background: rgba(9, 10, 75, 0.95);
-        flex-direction: column;
-        padding: 60px 20px;
-        transition: 0.3s;
-    }
-
-    .navibar.active {
-        left: 0;
-    }
-
-    .navibar ul {
-        flex-direction: column;
-        width: 100%;
-        gap: 20px;
-        padding: 0;
-    }
-
-    .navibar a {
-        display: block;
-        width: 100%;
-        text-align: left;
-        font-size: 23px;
-        padding: 10px 15px;
-    }
 }
 
 @media screen and (max-width: 480px) {
