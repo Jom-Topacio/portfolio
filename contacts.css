@@ -162,11 +162,13 @@ body {
         width: 90%;
         padding: 40px 20px;
         margin-top: 60px;
+        padding-right: 30px;
     }
 
     .btn {
         width: 100%;
-        margin: 10px 0;
+        font-size: 16px;
+        padding: 10px;
         justify-content: center;
     }
 
@@ -195,12 +197,27 @@ body {
     }
 
     .contact-container {
-        padding: 30px 15px;
+        width: 90%;
+        padding: 40px 20px;
+        margin-top: 60px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        margin-right: 10px;  
     }
 
     .btn {
+        width: calc(100% - 4px); 
+        box-sizing: border-box;
+        border: 2px solid black;
+        padding: 10px;
         font-size: 16px;
-        padding: 8px 16px;
+        margin: 10px 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .btn:hover {
@@ -210,5 +227,12 @@ body {
 
     .brand-text {
         display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .btn {
+        font-size: 17px;
+        padding: 12px 20px;
     }
 }
