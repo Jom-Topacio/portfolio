@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        </meta>
         <title>John Emmanuel Topacio | Home</title>
         
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,38 +17,33 @@
         <!-- Vanta.js background script -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
         <script src="vanta.js"></script>
         <!-- To connect css to html-->
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+     <body>
 
         <div id="vanta-bg"></div>
 
-        <img src="facelogo.jpg" alt="My pic" height="200">
+         <div class="container text-center py-5">
+            <img src="facelogo.jpg" alt="My pic" height="200" class="rounded-circle mb-4">
 
-        <h1>John Emmanuel Topacio</h1>
-        <h2>Aspiring Game Developer</h2>
-        <hr>
+            <h1 class="display-4">John Emmanuel Topacio</h1>
+            <h2 class="h3 mb-4">Aspiring Game Developer</h2>
+            <hr class="my-4">
 
-            <a href="about.html">
-            <button id="about-btn">About me</button>
-            </a>
-        
-            <a href="tech-stack.html">
-            <button id="techstack-btn">Tech Stack</button>
-            </a>
+            <div class="d-grid gap-3 col-md-6 mx-auto">
+                <a href="about.html" class="btn btn-primary" id="about-btn">About me</a>
+                <a href="tech-stack.html" class="btn btn-primary" id="techstack-btn">Tech Stack</a>
+                <a href="certificate.html" class="btn btn-primary" id="certificate-btn">Certificates</a>
+                <a href="contacts.html" class="btn btn-primary" id="contacts-btn">Contacts</a>
+            </div>
 
-            <a href="certificate.html">
-            <button id="certificate-btn">Certificates</button>
-            </a>
+            <p class="mt-4">Skrrttt!</p>
+        </div>
 
-            <a href="contacts.html">
-            <button id="contacts-btn">Contacts</button>
-            </a>
-
-        <p>Skrrttt!</p>
-
-        </script>
+        <!-- The Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

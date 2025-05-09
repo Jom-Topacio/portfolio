@@ -8,50 +8,35 @@
     background: #000000;
 }
 
-body{
-    text-align: center;
+body {
     font-family: "Cals Sans", sans-serif;
     color: #FFFFFF;
-} 
-
-img {
-    border-radius: 50%;
-    margin-top: 200px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 5px solid white;
-    
 }
 
-#about-btn, #techstack-btn, #contacts-btn, #certificate-btn {
+.btn-primary {
     font-size: 20px;
-    padding: 12px 25px;
-    margin: 30px;
     border: 2px solid rgba(255, 255, 255, 0.6);
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    backdrop-filter: blur(5px); 
+    background: rgba(0, 0, 0, 0.4) !important;
+    color: white !important;
+    backdrop-filter: blur(5px);
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: px;
+    letter-spacing: 1px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
-#about-btn:hover, #techstack-btn:hover, #contacts-btn:hover,  #certificate-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fafafa;
+.btn-primary:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fafafa !important;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
-#about-btn:active, #techstack-btn:active, #contacts-btn:active, #certificate-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 0 30px rgba(255, 204, 0, 1);
+.btn-primary:active {
+    transform: scale(0.95) !important;
+    box-shadow: 0 0 30px rgba(255, 204, 0, 1) !important;
 }
 
 .navibar {
@@ -90,39 +75,7 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    img {
-        margin-top: 100px;
-        width: 150px;
-        height: 150px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    #about-btn, #techstack-btn, #contacts-btn, #certificate-btn {
+    .btn-primary {
         font-size: 16px;
-        padding: 10px 20px;
-        margin: 10px;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    img {
-        margin-top: 80px;
-        width: 120px;
-        height: 120px;
-    }
-
-    .button-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
     }
 }
