@@ -47,7 +47,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(20, 20, 20, 0.85);
     padding: 90px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -74,16 +74,16 @@ body {
     margin: 10px;
     font-size: 18px;
     text-decoration: none;
-    color: black;
-    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(228, 224, 224);
     border-radius: 5px;
     transition: 0.3s;
 }
 
 
 .btn:hover {
-    background: black;
-    color: white;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .hamburger {
