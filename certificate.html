@@ -46,19 +46,73 @@
                 <div class="certificates-grid">
         
                     <div class="certificate-item">
-                        <img src="images/ORACLECERT.png" alt="Certificate 1">
+                        <button type="button" class="certificate-thumb" onclick="openLightbox(this)">
+                            <img src="images/certificates/ORACLECERT.png" alt="Oracle Completion Certificate">
+                        </button>
                         <h3>Oracle Completion Certificate</h3>
                     </div>
                     
                     <div class="certificate-item">
-                        <img src="images/JAVACERT.png" alt="Certificate 2">
+                        <button type="button" class="certificate-thumb" onclick="openLightbox(this)">
+                            <img src="images/certificates/javaa.png" alt="IT Specialist - Java Certification">
+                        </button>
                         <h3>IT Specialist - Java Certification</h3>
+                    </div>
+
+                    <div class="certificate-item">
+                        <button type="button" class="certificate-thumb" onclick="openLightbox(this)">
+                            <img src="images/certificates/wordd.png" alt="Microsoft Office Specialist Word 2019 Associate Certificate">
+                        </button>
+                        <h3>Microsoft Office Specialist - Word 2019 Associate</h3>
+                    </div>
+
+                    <div class="certificate-item">
+                        <button type="button" class="certificate-thumb" onclick="openLightbox(this)">
+                            <img src="images/certificates/htmlcss.png" alt="HTML and CSS Certificate">
+                        </button>
+                        <h3>HTML and CSS Certificate</h3>
+                    </div>
+
+                    <div class="certificate-item">
+                        <button type="button" class="certificate-thumb" onclick="openLightbox(this)">
+                            <img src="images/certificates/cybersecurity.png" alt="Cybersecurity Certificate">
+                        </button>
+                        <h3>Cybersecurity Certificate</h3>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" onclick="closeLightbox(event)">
+            <button type="button" class="lightbox-close" aria-label="Close" onclick="closeLightbox(event)">&times;</button>
+            <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        </div>
+
         <script>
+        function openLightbox(trigger) {
+            const thumb = trigger.querySelector('img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = thumb.src;
+            lightboxImg.alt = thumb.alt;
+            lightbox.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            if (event && event.target.classList.contains('lightbox-img')) {
+                return;
+            }
+            document.getElementById('lightbox').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
         function toggleMenu() {
             const nav = document.querySelector('.navibar');
             nav.classList.toggle('active');

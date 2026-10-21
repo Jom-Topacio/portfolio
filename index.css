@@ -1,16 +1,29 @@
+html {
+    background-color: #000000;
+    overscroll-behavior: none;
+}
+
+body {
+    background-color: transparent;
+    overscroll-behavior: none;
+}
+
 #vanta-bg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    height: 100lvh;
     z-index: -1;
-    background: #000000;
+    background-color: #000000;
 }
 
 body {
     font-family: "Cal Sans", sans-serif;
     color: #FFFFFF;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .btn-primary {
