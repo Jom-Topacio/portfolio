@@ -66,7 +66,9 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
     box-sizing: border-box;
     padding: 90px 0 32px;
 }
@@ -80,11 +82,13 @@ body {
 .certificates-container {
     width: 80%;
     max-width: 1200px;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 30px;
     background: rgba(20, 20, 20, 0.85); 
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 
 
@@ -101,6 +105,7 @@ body {
     padding: 15px;
     text-align: center;
     background-color: white;
+    color: black;
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;

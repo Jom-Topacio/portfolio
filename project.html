@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Emmanuel Topacio | Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="vanta.js"></script>
+
+    <link rel="stylesheet" href="certificate.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="brand-text">John Topacio</div>
+    <div id="vanta-bg"></div>
+
+    <nav class="navibar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="tech-stack.html">Tech Stack</a></li>
+            <li><a href="project.html" aria-current="page">Projects</a></li>
+            <li><a href="certificate.html">Certificates</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <main class="project-wrapper">
+        <section class="project-container" aria-labelledby="project-title">
+            <p class="project-category">IoT and Capstone Project</p>
+            <h1 id="project-title">SILONG: An Energy-Sustainable Smart IoT-Enabled Fish Drying Station</h1>
+            <p class="project-description">
+                <strong>SILONG</strong> is an IoT-enabled, energy-sustainable smart docking station designed to modernize and protect traditional sun-dried fish (<em>daing</em>) processing in coastal Philippine communities. Built as a capstone project using an ESP32 microcontroller, NEMA 17 stepper motors, and salt-air corrosion-resistant framing, the system automates weather protection without altering the natural solar drying process. It features a Human-in-the-Loop (HITL) dual-layer decision framework that utilizes the OpenWeatherMap API for proactive rain forecasting via a custom Flutter mobile app, alongside edge-computed raindrop sensors that trigger a 10-to-15 second motorized retraction failsafe during sudden downpours. To ensure uninterrupted off-grid operation during coastal power outages, the station integrates a hybrid power setup comprising a 20W monocrystalline solar panel, a 10A PWM charge controller, and a 12V 7Ah rechargeable AGM battery.
+            </p>
+            <p class="project-description">
+                Backed by Supabase for real-time telemetry streaming and managed through a Next.js administrative web panel, SILONG bridges traditional post-harvest practices with modern cloud and hardware architecture. By preventing post-harvest spoilage and preserving high-value drying batches, the prototype offers small-scale producers an economically viable solution with an estimated payback period of less than three months. Furthermore, the project advances key United Nations Sustainable Development Goals - specifically SDG 2 (Zero Hunger), SDG 7 (Affordable and Clean Energy), SDG 8 (Decent Work and Economic Growth), and SDG 9 (Industry, Innovation, and Infrastructure) - by reducing labor strain, enhancing food safety, and introducing localized technological innovation to artisanal fisheries.
+            </p>
+
+            <section class="project-tech-stack" aria-labelledby="tech-stack-title">
+                <h2 id="tech-stack-title">Technologies Used</h2>
+                <ul class="tech-grid">
+                    <li>Flutter SDK (Dart)</li>
+                    <li>Next.js</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Embedded C</li>
+                    <li>C++</li>
+                    <li>Arduino IDE</li>
+                    <li>ESP32</li>
+                    <li>NEMA 17 Stepper Motor</li>
+                    <li>A4988 Driver</li>
+                    <li>DHT22 Sensor</li>
+                    <li>Raindrop Module</li>
+                    <li>Supabase</li>
+                    <li>PostgreSQL</li>
+                    <li>Deno Runtime</li>
+                    <li>OpenWeatherMap REST API</li>
+                </ul>
+            </section>
+            <div class="project-bottom-grid">
+                <section class="project-members" aria-labelledby="silong-members-title">
+                    <h2 id="silong-members-title">Members</h2>
+                    <ul class="tech-grid">
+                        <li>Building the Hardware: Ken Jimwill Baltero</li>
+                        <li>Frontend Development, Backend Development: Kim Benedict Sumilang</li>
+                        <li>Assisted Building the Hardware, Documentation: Pauline Ponon</li>
+                        <li>Assisted Building the Hardware, Documentation: John Emmanuel Topacio</li>
+                    </ul>
+                </section>
+                <figure class="project-image-placeholder">
+                    <figcaption>Project image goes here</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="project-container" aria-labelledby="hakbang-title">
+            <p class="project-category">Application Development Project</p>
+            <h2 id="hakbang-title">Hakbang: A Smart AI-Powered Career Tracker for IT Learners</h2>
+            <p class="project-description">
+                Hakbang is an AI-powered mobile application designed to guide students and aspiring IT professionals through career exploration and skill development. Developed using an Agile framework, the system solves career indecision and lack of direction by delivering personalized IT career recommendations, curated learning roadmaps, interactive quizzes, gamified progress tracking with badges, and an AI-driven virtual career mentor.
+            </p>
+            <p class="project-description">
+                The platform features a multi-tiered architecture: a cross-platform Flutter mobile client for students, an Express.js/Node.js REST API backend connected to a MongoDB Atlas cloud database, and an administrative web dashboard for system monitoring and content management. To deliver intelligent guidance, Hakbang integrates OpenAI's GPT-3.5-Turbo API, providing tailored career matching based on user skills, interactive Q&amp;A mentorship, and resume feedback. Robust security measures - including bcrypt password hashing, JWT-based authentication, and Role-Based Access Control (RBAC) - ensure secure user data management and system governance.
+            </p>
+
+            <section class="project-tech-stack" aria-labelledby="hakbang-tech-title">
+                <h3 id="hakbang-tech-title">Technologies Used</h3>
+                <ul class="tech-grid">
+                    <li>Flutter SDK (Dart)</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>JWT</li>
+                    <li>Bcrypt.js</li>
+                    <li>MongoDB Atlas</li>
+                    <li>Mongoose</li>
+                    <li>OpenAI API (GPT-3.5-Turbo)</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>GitLab</li>
+                    <li>Bruno</li>
+                    <li>Postman</li>
+                </ul>
+            </section>
+            <div class="project-bottom-grid">
+                <section class="project-members" aria-labelledby="hakbang-members-title">
+                    <h3 id="hakbang-members-title">Members</h3>
+                    <ul class="tech-grid">
+                        <li>Project Manager: Sam Richmond Go</li>
+                        <li>Data Analyst: Klein Arnie Ortega</li>
+                        <li>Front-End Developer: Jenrick Ambalong</li>
+                        <li>Back-End Developer: John Emmanuel Topacio</li>
+                    </ul>
+                </section>
+                <figure class="project-image-placeholder">
+                    <figcaption>Project image goes here</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.navibar');
+            nav.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(event) {
+            const nav = document.querySelector('.navibar');
+            const hamburger = document.querySelector('.hamburger');
+            if (!nav.contains(event.target) && !hamburger.contains(event.target) && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

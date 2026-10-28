@@ -35,6 +35,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="tech-stack.html">Tech Stack</a></li>
+                <li><a href="project.html">Projects</a></li>
                 <li><a href="certificate.html">Certificates</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
@@ -81,6 +82,32 @@
                     </div>
                 </div>
             </div>
+
+            <section class="certificates-container">
+                <h2>Cisco Certificates</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-item">
+                        <button type="button" class="certificate-thumb" onclick="openLightbox(this)" aria-label="Zoom IoT Certificate">
+                            <img src="images/CiscoCertificates/IntroToIOTCert.png" alt="IoT Certificate">
+                        </button>
+                        <h3>IoT Certificate</h3>
+                    </div>
+
+                    <div class="certificate-item">
+                        <button type="button" class="certificate-thumb" onclick="openLightbox(this)" aria-label="Zoom Cisco Packet Tracer Certificate">
+                            <img src="images/CiscoCertificates/CISCOPTCERT.png" alt="Cisco Packet Tracer Certificate">
+                        </button>
+                        <h3>Cisco Packet Tracer Certificate</h3>
+                    </div>
+
+                    <div class="certificate-item">
+                        <button type="button" class="certificate-thumb" onclick="openLightbox(this)" aria-label="Zoom Introduction to IoT certificate">
+                            <img src="images/CiscoCertificates/IntroductionToIOT.png" alt="Introduction to IoT certificate">
+                        </button>
+                        <h3>Introduction to IoT</h3>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" onclick="closeLightbox(event)">
@@ -91,6 +118,9 @@
         <script>
         function openLightbox(trigger) {
             const thumb = trigger.querySelector('img');
+            if (!thumb) {
+                return;
+            }
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             lightboxImg.src = thumb.src;
