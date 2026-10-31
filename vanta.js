@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         scale: 1.00,
         scaleMobile: 1.00,
         backgroundColor: 0x0,
-        color1: 0xc03737,
+        color1: 0x37cfc3,
         color2: 0xffffff,
         speedLimit: 10.00,
         quantity: 2.00

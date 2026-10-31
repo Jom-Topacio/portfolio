@@ -15,27 +15,26 @@
 
     <link rel="stylesheet" href="certificate.css">
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="site-nav.css">
+    <script src="site-nav.js" defer></script>
 </head>
 <body>
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <div class="brand-text">John Topacio</div>
     <div id="vanta-bg"></div>
 
-    <nav class="navibar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="tech-stack.html">Tech Stack</a></li>
-            <li><a href="project.html" aria-current="page">Projects</a></li>
-            <li><a href="certificate.html">Certificates</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <a class="site-mark" href="index.html" aria-label="John Topacio home">JT<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="tech-stack.html">Tech stack</a>
+            <a href="project.html" aria-current="page">Projects</a>
+            <a href="certificate.html">Certificates</a>
+        </nav>
+    </header>
 
     <main class="project-wrapper">
         <section class="project-container" aria-labelledby="project-title">
@@ -79,8 +78,8 @@
                         <li>Assisted Building the Hardware, Documentation: John Emmanuel Topacio</li>
                     </ul>
                 </section>
-                <figure class="project-image-placeholder">
-                    <figcaption>Project image goes here</figcaption>
+                <figure class="project-image">
+                    <img src="images/silonghw.png" alt="SILONG fish drying station hardware prototype">
                 </figure>
             </div>
         </section>
@@ -130,19 +129,5 @@
         </section>
     </main>
 
-    <script>
-        function toggleMenu() {
-            const nav = document.querySelector('.navibar');
-            nav.classList.toggle('active');
-        }
-
-        document.addEventListener('click', function(event) {
-            const nav = document.querySelector('.navibar');
-            const hamburger = document.querySelector('.hamburger');
-            if (!nav.contains(event.target) && !hamburger.contains(event.target) && nav.classList.contains('active')) {
-                nav.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 </html>

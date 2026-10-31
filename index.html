@@ -1,49 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        </meta>
-        <title>John Emmanuel Topacio | Home</title>
-        
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Emmanuel Topacio | Portfolio</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="vanta.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="site-nav.css">
+    <script src="site-nav.js" defer></script>
+</head>
+<body>
+    <div id="vanta-bg" aria-hidden="true"></div>
 
-        <!-- Vanta.js background script -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="site-mark" href="index.html" aria-label="John Topacio home">JT<span>.</span></a>
 
-        <script src="vanta.js"></script>
-        <!-- To connect css to html-->
-        <link rel="stylesheet" href="index.css">
-    </head>
-     <body>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+            </button>
 
-        <div id="vanta-bg"></div>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="tech-stack.html">Tech stack</a>
+                <a href="project.html">Projects</a>
+                <a href="certificate.html">Certificates</a>
+            </nav>
+        </header>
 
-         <div class="container text-center py-5">
-            <img src="images/facelogo.jpg" alt="My pic" height="200" class="rounded-circle mb-4">
+        <main>
+            <section class="home-hero" aria-labelledby="home-title">
+                <figure class="hero-portrait">
+                    <div class="portrait-frame">
+                        <img src="images/facelogo.jpg" alt="Portrait of John Emmanuel Topacio">
+                    </div>
+                </figure>
 
-            <h1 class="display-4">John Emmanuel Topacio</h1>
-            <h2 class="h3 mb-4">Aspiring Game Developer</h2>
-            <hr class="my-4">
+                <div class="hero-heading">
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Welcome to my portfolio</p>
+                    <h1 id="home-title">John Emmanuel <span>Topacio</span></h1>
+                    <p class="hero-role">Aspiring Game Developer</p>
+                </div>
 
-            <div class="d-grid gap-3 col-md-6 mx-auto">
-                <a href="about.html" class="btn btn-primary" id="about-btn">About me</a>
-                <a href="tech-stack.html" class="btn btn-primary" id="techstack-btn">Tech Stack</a>
-                <a href="project.html" class="btn btn-primary" id="project-btn">Projects</a>
-                <a href="certificate.html" class="btn btn-primary" id="certificate-btn">Certificates</a>
-                <a href="contacts.html" class="btn btn-primary" id="contacts-btn">Contacts</a>
-            </div>
+                <p class="hero-intro">I’m building my skills in game development and exploring how thoughtful technology can bring ideas to life. Here, I share the projects I’ve worked on, the tools I’m learning, and a little about the person behind them.</p>
 
-        </div>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="project.html">Explore my projects <span aria-hidden="true">&rarr;</span></a>
+                    <a class="button button-secondary" href="about.html">Get to know me</a>
+                </div>
 
-        <!-- The Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+                <p class="hero-note"><span class="note-mark" aria-hidden="true"></span> Curious by nature. Learning by making.</p>
+
+                <div class="hero-contact" id="contact-links" aria-label="Contact links">
+                    <a class="contact-brand" href="index.html" aria-label="John Topacio">JT<span>.</span></a>
+                    <a class="social-link" href="https://www.linkedin.com/in/jom-topacio-673609356/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/linkedlnlogo.png" alt="">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="social-link" href="https://github.com/Jom-Topacio" target="_blank" rel="noopener noreferrer">
+                        <img src="images/githublogo.png" alt="">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="selected-work" aria-labelledby="selected-work-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">A few things I’ve been making</p>
+                        <h2 id="selected-work-title">Selected projects</h2>
+                    </div>
+                    <a class="all-projects-link" href="project.html">All projects <span aria-hidden="true">&rarr;</span></a>
+                </div>
+
+                <div class="project-list">
+                    <a class="project-row" href="project.html">
+                        <span class="project-number">01</span>
+                        <span class="project-name"><strong>SILONG</strong><small>Energy-sustainable fish drying station</small></span>
+                        <span class="project-kind">IoT / Capstone</span>
+                        <span class="project-arrow" aria-hidden="true">&nearr;</span>
+                    </a>
+                    <a class="project-row" href="project.html">
+                        <span class="project-number">02</span>
+                        <span class="project-name"><strong>Hakbang</strong><small>AI-powered career tracker for IT learners</small></span>
+                        <span class="project-kind">Application development</span>
+                        <span class="project-arrow" aria-hidden="true">&nearr;</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>John Emmanuel Topacio</span>
+            <a href="#contact-links">Say hello <span aria-hidden="true">&nearr;</span></a>
+        </footer>
+    </div>
+
+</body>
 </html>

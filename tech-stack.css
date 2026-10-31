@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(9, 10, 75, 0.397);
+    background: #082948;
     padding: 15px 30px;
     display: flex;
     justify-content: flex-start;
@@ -52,7 +52,8 @@ body {
 }
 
 .navibar a:hover {
-    background: #555;
+    color: #082948;
+    background: #37cfc3;
 }
 
 body {
@@ -78,7 +79,7 @@ body {
     position: relative;
     z-index: 1;
     color: white; 
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(55, 207, 195, 0.35);
 }
 
 .boxxs p {
@@ -93,7 +94,7 @@ body {
     font-family: "Cal Sans", sans-serif;
     font-weight: 600;
     text-align: center;
-    color: #FFFFFF; 
+    color: #37cfc3; 
     margin-bottom: 15px;
 }
 
@@ -112,11 +113,11 @@ body {
     justify-content: center;
     width: 90px;
     height: 90px;
-    background: lightskyblue;
+    background: #37cfc3;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-top: 4px solid green;
+    border-top: 4px solid #082948;
 }
 
 .tech-item img {
@@ -173,7 +174,7 @@ body {
         left: -100%;
         height: 100vh;
         width: 250px;
-        background: rgba(9, 10, 75, 0.95);
+        background: #061d35;
         flex-direction: column;
         padding: 60px 20px;
         transition: 0.3s;
