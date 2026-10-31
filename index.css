@@ -113,9 +113,6 @@ body {
 }
 
 .eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 10px;
     margin: 0;
     color: var(--muted);
     font-size: 12px;
@@ -128,18 +125,9 @@ body {
     grid-row: 1;
 }
 
-.eyebrow-dot {
-    width: 8px;
-    height: 8px;
-    flex: 0 0 8px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 16px rgba(55, 207, 195, 0.55);
-}
-
 .home-hero h1 {
     max-width: 680px;
-    margin: 24px 0 0;
+    margin: 0;
     color: var(--text);
     font-family: "Cal Sans", sans-serif;
     font-size: 68px;
@@ -543,7 +531,7 @@ body {
     }
 
     .home-hero h1 {
-        margin-top: 12px;
+        margin-top: 0;
         font-size: 30px;
         overflow-wrap: normal;
     }
